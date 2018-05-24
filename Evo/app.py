@@ -37,12 +37,13 @@ def all_notes():
     session = Session()
     notes = {}
     for note in session.query(Note):
-        notes[note.note_title] = note.note_body
 
-        text = set('wefwef, qwdwqd, !1fwef, 31dqw\ fqwd'.lower().translate(''.maketrans('', '', string.punctuation)).split())
-    print(len(text))
-    print(text)
-    #note = sorted(note, key=lambda x: )
+        size_of_body = len(set(note.note_body.lower().translate(''.maketrans('', '', string.punctuation)).split()))
+        notes[note.note_title] = [note.note_body, size_of_body]
+    print(notes)
+    notes = dict(sorted(notes.items(), key=lambda x: x[1][1], reverse=True))
+    print(notes)
+
     return render_template(
         'all_notes.html', **locals()
     )
