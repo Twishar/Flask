@@ -1,0 +1,11 @@
+{% block body %}
+
+<div class="block1">
+    {% for note in notes %}
+        <h1>Title: {{note}}</h1>
+        <h2>Body of note: {{notes[note]}}</h2>
+        <img src="http://www.naturalprogramming.com/images/smilingpython.gif">
+    {% endfor %}
+</div>
+
+{% endblock %}
