@@ -1,12 +1,30 @@
+{% extends "index.html" %}
+{% block body %}
+<html>
+    <head>
+        <title>Add note</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script></head>
+    <body>
 
-<h1>Add note/</h1>
 
-<form action="/add_note" method="post">
-    <dl>
-        <dt>Title of note</dt>
-        <dd><input type="text" name="Title"></dd>
-        <dt>Note body</dt>
-        <dd><input type="text" name="Body"></dd>
-    </dl>
-    <input type="submit" value="Enter">
-</form>
+<div class="container">
+
+  <h2>Add New Note</h2>
+  <form  action="/add_note" method="post">
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input type="text" class="form-control" id="title" name="Title" placeholder="Type title for u note">
+      <br>
+      <label for="body">Note info:</label>
+        <textarea id="body" class="form-control" name="Body"></textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Add note</button>
+  </form>
+
+</div>
+<br>
+</body>
+</html>
+{% endblock %}

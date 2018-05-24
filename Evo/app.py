@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Index"
+    return render_template('add_note.html')
 
 
 @app.route('/add_note', methods=['GET', 'POST'])
@@ -26,7 +26,6 @@ def add_note():
         # commit the record database
         session.commit()
     return render_template('add_note.html')
-
 
 
 @app.route('/notes')
