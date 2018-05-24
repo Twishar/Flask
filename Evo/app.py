@@ -1,5 +1,5 @@
 
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, redirect
 from create_db import Note
 from sqlalchemy import create_engine
 import string
@@ -46,6 +46,18 @@ def all_notes():
     return render_template(
         'all_notes.html', **locals()
     )
+
+
+@app.route('/remove_note', methods=['GET', 'POST'])
+def remove_note():
+    if request.method == 'POST':
+        engine = create_engine('sqlite:///notes.db', echo=True)
+        Session = sessionmaker(bind=engine)
+        session = Session()
+        note = session.query(Note).filter_by(note_title=request.form['test']).first()
+        session.delete(note)
+        session.commit()
+    return redirect('/notes')
 
 
 if __name__ == '__main__':

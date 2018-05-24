@@ -22,7 +22,14 @@
                   <div class="panel-body">
                     {{notes[note][0]}}
                   </div>
+                  <form  action="/remove_note" method="post">
+                    <div class="form-group">
+                      <input type="hidden" name="test" value="{{note}}">
+                    </div>
+                    <button type="submit" class="btn btn-danger">Remove</button>
+                  </form>
                 </div>
+
             </div>
         {% endfor %}
       </div>
