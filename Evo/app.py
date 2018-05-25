@@ -1,10 +1,16 @@
-
-from flask import Flask, request, render_template, redirect
-from create_db import Note
-from sqlalchemy import create_engine
 import string
+
+from create_db import Note
+
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+
+from flask_sslify import SSLify
+from flask import Flask, request, render_template, redirect
+
+
 app = Flask(__name__)
+sslify = SSLify(app)
 
 
 @app.route('/')
