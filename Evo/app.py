@@ -25,7 +25,9 @@ def add_note():
 
         # commit the record database
         session.commit()
-    return render_template('add_note.html')
+        return redirect('/notes')
+    if request.method == 'GET':
+        return render_template('add_note.html')
 
 
 @app.route('/notes')
