@@ -15,7 +15,7 @@ sslify = SSLify(app)
 
 @app.route('/')
 def index():
-    return render_template('add_note.html')
+    return render_template('index.html')
 
 
 @app.route('/add_note', methods=['GET', 'POST'])

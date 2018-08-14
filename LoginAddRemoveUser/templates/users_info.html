@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-xs-6">
+                <h2>{{user_name}}</h2>
+            </div>
+            <div class="col-xs-6">
+                <form action="/log_out">
+                <button type="submit" class="btn btn-danger">LogOut</button>
+            </form>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    {% if childs %}
+        {% for name in childs %}
+            <h4>{{name}}</h4>
+            <form  action="/remove_user" method="post">
+                <div class="form-group">
+                  <input type="hidden" name="parent_name" value="{{user_name}}">
+                </div>
+                <div class="form-group">
+                  <input type="hidden" name="remove" value="{{name}}">
+                </div>
+                <button type="submit" class="btn btn-danger">Remove</button>
+            </form>
+        {% endfor %}
+    {% endif %}
+    <form method="post">
+
+        <div class="form-group">
+
+            <input type='hidden' class="form-control" name="parent" value='{{user_name}}'>
+        </div>
+
+        <div class="form-group">
+
+            <input type='text' class="form-control" name="username" placeholder="Email Address">
+        </div>
+
+        <div class="form-group">
+
+            <input type="password" class="form-control" name="password" placeholder="Password">
+
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+
+    </form>
+</body>
+</html>
