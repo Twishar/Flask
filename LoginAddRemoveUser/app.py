@@ -4,6 +4,8 @@ from create_db import Users
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
+import logging
+logging.basicConfig(filename='logging.log', level=logging.DEBUG)
 
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
@@ -14,19 +16,16 @@ def login():
     if request.method == 'POST' and request.form.get('check') == 'Login':
 
         user_name, password = request.form['username'], request.form['password']
-        print(user_name)
         engine = create_engine('sqlite:///users.db', echo=True)
         # create a Session
         Session = sessionmaker(bind=engine)
         session = Session()
         notes = {}
         user = session.query(Users).filter(Users.name == user_name, Users.password == password).all()
-        print(user)
-        print(user == [])
 
         if user == []:
-            print('check')
             flash("Sorry, Bro. Firstly registration")
+            logging.warning("Not registered user: {}".format(user_name))
             return redirect(url_for('login'))
 
         return redirect(url_for('users_info', user_name=user_name))
@@ -37,7 +36,12 @@ def login():
         # create a Session
         Session = sessionmaker(bind=engine)
         session = Session()
+        check = session.query(Users).filter(Users.name == request.form['username']).all()
 
+        if check != []:
+            flash("Sorry, Bro. This name is occupied")
+            logging.warning("Name:{} is occupied".format(request.form['username']))
+            return redirect(url_for('login'))
         user = Users(request.form['username'], request.form['password'], '')
         session.add(user)
         session.commit()
@@ -59,6 +63,12 @@ def users_info():
         Session = sessionmaker(bind=engine)
         session = Session()
 
+        check = session.query(Users).filter(Users.name == request.form['username']).all()
+        if check != []:
+            flash("Sorry, Bro. This name is occupied")
+            logging.warning("Name:{} is occupied".format(request.form['username']))
+            return redirect(url_for('users_info', user_name=user_name))
+
         user = Users(request.form['username'], request.form['password'], user_name)
         session.add(user)
 
@@ -69,7 +79,10 @@ def users_info():
     engine = create_engine('sqlite:///users.db', echo=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    child_users = session.query(Users).filter(Users.parent_name == user_name).all()
+    if user_name != "admin":
+        child_users = session.query(Users).filter(Users.parent_name == user_name).all()
+    else:
+        child_users = session.query(Users).filter(Users.name != user_name).all()
     childs = []
     for child in child_users:
         childs.append(child.name)
@@ -83,10 +96,10 @@ def remove_user():
         Session = sessionmaker(bind=engine)
         session = Session()
         user = session.query(Users).filter_by(name=request.form['remove']).first()
-        print(user)
-        print(user.name)
-        session.delete(user)
-        session.commit()
+        if user != []:
+            session.delete(user)
+            session.commit()
+
     return redirect(url_for("users_info", user_name=request.form['parent_name']))
 
 
