@@ -6,11 +6,11 @@
 </head>
 <body>
     <div class="panel-heading">
-        <div class="row">
-            <div class="col-xs-6">
+        <div class="row" style="display: inline-flex;">
+            <div class="col-xs-6" style="margin: 10px;">
                 <h2>{{user_name}}</h2>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-6" style="align-self: center;">
                 <form action="/log_out">
                 <button type="submit" class="btn btn-danger">LogOut</button>
             </form>
@@ -18,22 +18,8 @@
         </div>
         <hr>
     </div>
-
-    {% if childs %}
-        {% for name in childs %}
-            <h4>{{name}}</h4>
-            <form  action="/remove_user" method="post">
-                <div class="form-group">
-                  <input type="hidden" name="parent_name" value="{{user_name}}">
-                </div>
-                <div class="form-group">
-                  <input type="hidden" name="remove" value="{{name}}">
-                </div>
-                <button type="submit" class="btn btn-danger">Remove</button>
-            </form>
-        {% endfor %}
-    {% endif %}
-    <form method="post">
+    <div>
+        <form method="post"  style="display: -webkit-box;">
 
         <div class="form-group">
 
@@ -58,8 +44,54 @@
             <input type="password" class="form-control" name="password" placeholder="Password">
 
         </div>
-        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="submit" class="btn btn-primary">Add new User</button>
 
     </form>
+
+    <div class="container" style="display: inline-flex;">
+    {% if admin %}
+        {% if childs %}
+        {% for parent in childs %}
+                <div style="margin-right: 20px;">
+                    <h3>{{parent}}</h3>
+                    <div>
+                        {% for child in childs[parent] %}
+                        <div style="margin: 10px;">
+                            <h4 style="text-align: -webkit-center;">{{child}}</h4>
+                            <form  action="/remove_user" method="post">
+                                <div class="form-group">
+                                  <input type="hidden" name="parent_name" value="{{user_name}}">
+                                </div>
+                                <div class="form-group">
+                                  <input type="hidden" name="remove" value="{{child}}">
+                                </div>
+                                <button type="submit" class="btn btn-danger">Remove</button>
+                            </form>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+        {% endfor %}
+        {% endif %}
+    {% else %}
+        {% if childs %}
+        {% for name in childs %}
+            <div style="margin: 10px;">
+                <h4 style="text-align: -webkit-center;">{{name}}</h4>
+                <form  action="/remove_user" method="post">
+                    <div class="form-group">
+                      <input type="hidden" name="parent_name" value="{{user_name}}">
+                    </div>
+                    <div class="form-group">
+                      <input type="hidden" name="remove" value="{{name}}">
+                    </div>
+                    <button type="submit" class="btn btn-danger">Remove</button>
+                </form>
+            </div>
+        {% endfor %}
+        {% endif %}
+    {% endif %}
+    </div>
+    </div>
 </body>
 </html>

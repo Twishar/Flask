@@ -10,5 +10,11 @@
     <data-source name="tutorial" uuid="0780509a-d640-4ebc-9012-0fa91060aa07">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
     </data-source>
+    <data-source name="users" uuid="c9d85019-3f11-476f-9615-c072abb10ca2">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
+    <data-source name="users [2]" uuid="fb45c337-f2b2-4f96-b46d-04902927cc27">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
   </component>
 </project>

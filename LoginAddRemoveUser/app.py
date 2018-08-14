@@ -108,5 +108,20 @@ def log_out():
     return redirect('/login')
 
 
+@app.route('/testt')
+def testt():
+    engine = create_engine('sqlite:///users.db', echo=True)
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    users = session.query(Users.parent_name).distinct().all()
+    parents_childs = {}
+    for p_user in users:
+        if p_user[0] != '':
+            parents_childs[p_user[0]] = [child.name for child in session.query(Users).filter(Users.parent_name == p_user[0]).all()]
+
+    logging.info(parents_childs)
+    return render_template('users_info.html', user_name='admin', childs=parents_childs, admin=True)
+
+
 if __name__ == '__main__':
     app.run()
