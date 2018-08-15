@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 </head>
 <body>
     <div class="panel-heading">
@@ -12,7 +16,7 @@
             </div>
             <div class="col-xs-6" style="align-self: center;">
                 <form action="/log_out">
-                <button type="submit" class="btn btn-danger">LogOut</button>
+                <button type="submit" class="glyphicon glyphicon-log-in"></button>
             </form>
             </div>
         </div>
@@ -56,7 +60,7 @@
                     <h3>{{parent}}</h3>
                     <div>
                         {% for child in childs[parent] %}
-                        <div style="margin: 10px;">
+                        <div style="margin: 25px;">
                             <h4 style="text-align: -webkit-center;">{{child}}</h4>
                             <form  action="/remove_user" method="post">
                                 <div class="form-group">

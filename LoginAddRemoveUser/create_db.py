@@ -15,12 +15,14 @@ class Users(Base):
     name = Column(String, unique=True)
     parent_name = Column(String, default='')
     password = Column(String)
+    hash = Column(String)
 
-    def __init__(self, name, password, parent_name):
+    def __init__(self, name, password, parent_name, hash):
 
         self.name = name
         self.password = password
         self.parent_name = parent_name
+        self.hash = hash
 
 
 Base.metadata.create_all(engine)
