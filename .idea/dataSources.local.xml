@@ -16,5 +16,8 @@
     <data-source name="users [2]" uuid="fb45c337-f2b2-4f96-b46d-04902927cc27">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
     </data-source>
+    <data-source name="users [3]" uuid="2fff7031-7cb0-405b-8989-9673b44decde">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
   </component>
 </project>
