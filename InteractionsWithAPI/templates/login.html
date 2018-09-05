@@ -1,0 +1,24 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+    <h1> Sing in </h1>
+    <form action="" method="post" novalidate>
+        {{form.hidden_tag()}}
+        <p>
+            {{ form.payment_amount.label }}<br>
+            {{ form.payment_amount }}<br>
+            {% for error in form.payment_amount.errors %}
+            <span style="color:red">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.payment_currency() }}<br>
+        </p>
+        <p>
+            {{ form.description.label }}<br>
+            {{ form.description }}<br>
+        </p>
+        <p>{{ form.submit }}</p>
+    </form>
+{% endblock %}
