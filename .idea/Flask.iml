@@ -3,7 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/tutorials/WTForms" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/FlaskMega/microblog" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/InteractionsWithAPI" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.6 (Flask)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

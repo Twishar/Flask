@@ -19,5 +19,8 @@
     <data-source name="users [3]" uuid="2fff7031-7cb0-405b-8989-9673b44decde">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
     </data-source>
+    <data-source name="payments" uuid="cede2806-5bbb-4181-91f4-121c3b3295db">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
   </component>
 </project>
