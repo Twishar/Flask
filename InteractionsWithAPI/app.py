@@ -51,28 +51,35 @@ def payments():
     return render_template('payments.html', title='Payments', form=form)
 
 
-@app.route('/usd_api')
-def usd_api():
-    values  = []
-    for k in session.pop('values', []):
-        values.append(k)
-    print(values)
-
-    return ''
-
-
-@app.route('/eur_api')
+@app.route('/eur_api', methods=['POST', 'GET'])
 def eur_api():
-    return ''
+
+    return render_template('eur_test_templ.html')
 
 
 @app.route('/rub_api')
 def rub_api():
-    return ''
+    data = {
+            "amount": "12.34",
+            "currency": "643",
+            "payway": "payeer_rub",
+            "shop_id": "5",
+            "shop_order_id": "123456",
+            "sign": "b2ab7f0ae2788055305cf7f53a0a0904179b3a05b14fd945bf7da06bbaafc67a"
+            }
+
+    r = requests.post('https://core.piastrix.com/invoice/create', data=json.dumps(data),
+                      headers={'Content-Type': 'application/json'})
+    print(r.headers['content-type'])
+    print(r.json())
+    data = r.json()
+
+    link = data['data']['data']['referer']
+    return redirect(link)
 
 
-@app.route('/test', methods=['GET', 'POST'])
-def test_for_usd():
+@app.route('/usd_api', methods=['POST', 'GET'])
+def usd_api():
 
     data = {"payer_currency": 643,
             "shop_amount": "23.15",
@@ -85,7 +92,9 @@ def test_for_usd():
     r = requests.post('https://core.piastrix.com/bill/create', data=json.dumps(data), headers={'Content-Type': 'application/json'})
     print(r.headers['content-type'])
     print(r.json())
-    return 'ff'
+    data = r.json()
+    link = data['data']['url']
+    return redirect(link)
 
 
 if __name__ == '__main__':
