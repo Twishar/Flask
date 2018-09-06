@@ -7,12 +7,14 @@ import requests
 from create_db import Payments
 from forms import PaymentForm
 from sqlalchemy import create_engine
+from flask_bootstrap import Bootstrap
 from sqlalchemy.orm import sessionmaker
 from flask import Flask, redirect, url_for, render_template, flash, request, session
 
-
 app = Flask(__name__)
 app.secret_key = "SecretKey01"
+bootstrap = Bootstrap(app)
+
 shop_id = 5
 shop_order_id = 123456
 payway = "payeer_rub"
