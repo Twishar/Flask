@@ -22,5 +22,8 @@
     <data-source name="payments" uuid="cede2806-5bbb-4181-91f4-121c3b3295db">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
     </data-source>
+    <data-source name="payments [2]" uuid="fa6f1886-face-40cc-85e8-58ca0106a4fc">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
   </component>
 </project>

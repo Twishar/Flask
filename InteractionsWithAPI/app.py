@@ -38,11 +38,11 @@ def payments():
     if form.validate_on_submit():
 
         currency = form.payment_currency.data
-
+        currency_code = {'USD': '840', 'EUR': '978', 'RUB': '643'}
         currencies = {'USD': 'usd_api', 'EUR': 'eur_api', 'RUB': 'rub_api'}
         print(request.form['payment_currency'], request.form['description'], '!!!')
         values = [request.form['payment_amount'],
-                  request.form['payment_currency'],
+                  currency_code[request.form['payment_currency']],
                   request.form['description']]
         session['values'] = values
         return redirect(url_for('{}'.format(currencies[currency])))
@@ -80,21 +80,30 @@ def eur_api():
         dictt[val] = x
 
     sign = create_sign(':'.join(str(x) for x in [dictt['amount'], dictt['currency'], shop_id, shop_order_id]))
-    print(sign)
+
     add_to_DB(float(dictt['amount']), dictt['currency'], dictt['description'], datetime.datetime.now())
-    logger.info('Create EUR pay with values:'+', '.join([dictt['amount'], dictt['currency'], dictt['description']]))
-    return render_template('eur_test_templ.html')
+    logger.info('Create EUR pay with amount: {} and description: {}'.format(dictt['amount'], dictt['description']))
+    dictt['sign'] = sign
+    dictt['shop_id'] = shop_id
+    dictt['shop_order_id'] = shop_order_id
+    return render_template('eur_test_templ.html', dictt=dictt)
 
 
 @app.route('/rub_api')
 def rub_api():
+
+    titles = ['amount', 'currency', 'description']
+    dictt = {}
+    for val, x in zip(titles, session.pop("values", [])):
+        dictt[val] = x
+
     data = {
-            "amount": "12.34",
-            "currency": "643",
-            "payway": "payeer_rub",
-            "shop_id": "5",
-            "shop_order_id": "123456",
-            "sign": "b2ab7f0ae2788055305cf7f53a0a0904179b3a05b14fd945bf7da06bbaafc67a"
+            "amount": dictt['amount'],
+            "currency": dictt['currency'],
+            "payway": payway,
+            "shop_id": shop_id,
+            "shop_order_id": shop_order_id,
+            "sign": create_sign(dictt['amount'], dictt['currency'], payway, shop_id, shop_order_id)
             }
 
     r = requests.post('https://core.piastrix.com/invoice/create', data=json.dumps(data),
@@ -103,24 +112,35 @@ def rub_api():
     print(r.json())
     data = r.json()
 
-    link = data['data']['data']['referer']
-    return redirect(link)
+    add_to_DB(float(dictt['amount']), dictt['currency'], dictt['description'], datetime.datetime.now())
+    logger.info('Create RUB pay with amount: {} and description: {}'.format(dictt['amount'], dictt['description']))
+
+    return render_template('rub_templ.html', data=data['data']['data'])
 
 
 @app.route('/usd_api', methods=['POST', 'GET'])
 def usd_api():
+    payer_currency = '840'
+    titles = ['amount', 'currency', 'description']
+    dictt = {}
+    for val, x in zip(titles, session.pop("values", [])):
+        dictt[val] = x
 
-    data = {"payer_currency": 643,
-            "shop_amount": "23.15",
-            "shop_currency": 643,
-            "shop_id": "5",
-            "shop_order_id": 123456,
-            "sign": "091ee6f0bce195a508231ee0d62d7645bd0b38b63e22bde78046b277d6988045"
+    data = {"payer_currency": payer_currency,
+            "shop_amount": dictt['amount'],
+            "shop_currency": dictt['currency'],
+            "shop_id": shop_id,
+            "shop_order_id": shop_order_id,
+            "sign": create_sign(payer_currency, dictt['amount'], dictt['currency'], shop_id, shop_order_id)
             }
 
     r = requests.post('https://core.piastrix.com/bill/create', data=json.dumps(data), headers={'Content-Type': 'application/json'})
     print(r.headers['content-type'])
     print(r.json())
+
+    add_to_DB(float(dictt['amount']), dictt['currency'], dictt['description'], datetime.datetime.now())
+    logger.info('Create USD pay with amount: {} and description: {}'.format(dictt['amount'], dictt['description']))
+
     data = r.json()
     link = data['data']['url']
     return redirect(link)
