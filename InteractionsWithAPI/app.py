@@ -85,15 +85,18 @@ def rub_api():
                       headers={'Content-Type': 'application/json'})
 
     data_for_api = r.json()
+    if data_for_api["message"] == 'Ok':
+        add_to_db(float(data_from_form['amount']), data_from_form['currency'],
+                  data_from_form['description'], datetime.datetime.now())
 
-    add_to_db(float(data_from_form['amount']), data_from_form['currency'],
-              data_from_form['description'], datetime.datetime.now())
+        logger.info('Create RUB pay with amount: {} and description: {}'.format(data_from_form['amount'],
+                                                                                data_from_form['description']))
 
-    logger.info('Create RUB pay with amount: {} and description: {}'.format(data_from_form['amount'],
-                                                                            data_from_form['description']))
-
-    return render_template('api_for_rub.html', data=data_for_api['data']['data'],
-                           url=data_for_api['data']['url'], method=data_for_api['data']['method'])
+        return render_template('api_for_rub.html', data=data_for_api['data']['data'],
+                               url=data_for_api['data']['url'], method=data_for_api['data']['method'])
+    else:
+        flash(data_for_api["message"])
+        return redirect(url_for('payments'))
 
 
 @app.route('/usd_api', methods=['POST', 'GET'])
@@ -114,15 +117,20 @@ def usd_api():
     r = requests.post('https://core.piastrix.com/bill/create', data=json.dumps(data_for_request),
                       headers={'Content-Type': 'application/json'})
 
-    add_to_db(float(data_from_form['amount']), data_from_form['currency'],
-              data_from_form['description'], datetime.datetime.now())
-
-    logger.info('Create USD pay with amount: {} and description: {}'.format(data_from_form['amount'],
-                                                                            data_from_form['description']))
-
     data_for_api = r.json()
-    link = data_for_api['data']['url']
-    return redirect(link)
+
+    if data_for_api["message"] == 'Ok':
+        add_to_db(float(data_from_form['amount']), data_from_form['currency'],
+                  data_from_form['description'], datetime.datetime.now())
+
+        logger.info('Create USD pay with amount: {} and description: {}'.format(data_from_form['amount'],
+                                                                                data_from_form['description']))
+
+        link = data_for_api['data']['url']
+        return redirect(link)
+    else:
+        flash(data_for_api["message"])
+        return redirect(url_for('payments'))
 
 
 def add_to_db(*args):
