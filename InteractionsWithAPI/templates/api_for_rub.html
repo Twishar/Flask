@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <form id="pay_form" method="GET" action="https://payeer.com/api/merchant/process.php">
+    <form id="pay_form" method={{method}} action={{url}}>
         <input type="hidden" name="lang" value="ru" />
         <input type="hidden" name="m_curorderid" value={{data['m_curorderid']}}>
         <input type="hidden" name="m_historyid" value={{data['m_historyid']}}>
         <input type="hidden" name="m_historytm" value={{data['m_historytm']}}>
         <input type="hidden" name="referer" value={{data['referer']}}>
-        <input type="submit"/>
+        <input style="display: none" type="submit"/>
     </form>
 
     <script>
