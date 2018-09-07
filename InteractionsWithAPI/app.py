@@ -5,17 +5,19 @@ import datetime
 import requests
 
 from config import *
-from create_db import Payments
 from forms import PaymentForm
+from create_db import Payments
+from flask_sslify import SSLify
 from sqlalchemy import create_engine
 from flask_bootstrap import Bootstrap
+from flask_wtf.csrf import CSRFProtect
 from sqlalchemy.orm import sessionmaker
 from flask import Flask, redirect, url_for, render_template, flash, request, session
-from flask_sslify import SSLify
 
 app = Flask(__name__)
 app.secret_key = secret_key
-
+csrf = CSRFProtect(app)
+csrf.init_app(app)
 bootstrap = Bootstrap(app)
 SSLify(app)
 

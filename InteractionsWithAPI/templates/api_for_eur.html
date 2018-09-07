@@ -2,6 +2,7 @@
 
 {% block content %}
     <form id="pay_form" name="Pay" method="post" action=" https://pay.piastrix.com/ru/pay" accept-charset="UTF-8">
+        {{ form.csrf_token }}
         <input type="hidden" name="amount" value={{dictt['amount']}}>
         <input type="hidden" name="currency" value={{dictt['currency']}}>
         <input type="hidden" name="shop_id" value={{dictt['shop_id']}}>
