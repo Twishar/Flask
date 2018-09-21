@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kruti-pedali</title>
+	<link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
+	<link rel="stylesheet" href="{{url_for('static', filename='stylesheets/style.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/mobileStyle.css')}}">
+</head>
+<body>
+<a name="top"></a><div class="menu"> 
+  <div><a href="#about">О КОМАНДЕ</a></div>
+  <div style="text-align: center;"><a href="#guest">ПРЕДЛОЖИТЬ ГОСТЯ</a></div>
+  <div style="text-align: right;"><a href="#support">ПОДДЕРЖКА</a></div>
+</div>
+
+<video width="500" height="400" autoplay loop>
+    <source src="Lyricsvideo.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    Тег video не поддерживается вашим браузером. 
+  </video>
+<div class="menu"> 
+  <div><a href="#faq">FAQ</a></div>
+  <div style="text-align: right;"><a href="#contacts">КОНТАКТЫ</a></div>
+</div>
+<div class="menu"> 
+  <div><a href="#about">О КОМАНДЕ</a></div>
+  <div style="text-align: center;"><a href="#guest">ПРЕДЛОЖИТЬ ГОСТЯ</a></div>
+  <div style="text-align: right;"><a href="#support">ПОДДЕРЖКА</a></div>
+</div>
+<div class="listen">
+	<div style="vertical-align: middle;">
+
+		<span>СЛУШАЙ В:</span>
+		<a href=""> ITUNES PODCASTS,  &nbsp</a>
+		<a href=""> SOUNDCLOUD,  &nbsp</a>
+		<a href=""> ANCHOR</a>
+
+	</div>
+</div>
+<div class="menu"> 
+  <div><a href="#faq">FAQ</a></div>
+  <div style="text-align: center;"><a href="#top">В НАЧАЛО</a></div>
+  <div style="text-align: right;"><a href="#contacts">КОНТАКТЫ</a></div>
+</div>
+<div class="lastEpisode">
+	<div class="menu"> 
+	  <div><a href="#about" style="color: white;">О КОМАНДЕ</a></div>
+	  <div style="text-align: center;"><a href="#guest" style="color: white;">ПРЕДЛОЖИТЬ ГОСТЯ</a></div>
+	  <div style="text-align: right;"><a href="#support" style="color: white;">ПОДДЕРЖКА</a></div>
+	</div>
+	<span>
+		<p class="title">ПОСЛЕДНИЙ ЭПИЗОД</p>	
+		<div class="episodeImage">
+			<div>
+				<img style="width: 71%" src="../static/images/ep.png">
+				<button><a href="" style="font-family: GothamPro">Другие эпизоды</a></button>
+			</div>			
+		</div>
+		<h3 style="font-family: GothamPro; font-size: 33px; text-align: center;";>Отвечаем на вопросы о детстве</h3>
+
+		<p style="font-family: GothamPro; font-size: 30px; text-align: left;">
+			У нас сегодня небольшой праздник, мы отмечаем (почти)
+			юбилейный выпуск <b>Double Trouble</b>. Поэтому будем 
+			отвечать на личные вопросы о детстве, дабы узнать друг-друга
+			получше и рассказать вам о нас чуть больше.
+		</p>
+		<p style="font-family: GothamPro; font-size: 30px; font-weight: bold; text-align: left;">О чём подкаст?</p>
+		<ul style="font-family: GothamPro">
+			<li>где и когда ты родилась и выросла?</li>
+			<li>каким ты была ребёнком?</li>
+			<li>есть ли у тебя брат или сестра?</li>
+			<li>яркие воспоминания из детства</li>
+			<li>какие у тебя были хобби?</li>
+			<li>кем ты мечтала стать, когда была маленькой?</li>
+			<li>есть ли решение, принятое тобой в детстве, о котором ты жалеешь?</li>
+			<li>кто был твоим кумиром в детстве?</li>
+			<li>чего ты боялась в детстве?</li>
+			<li>была ли у тебя кличка в детстве?</li>
+		</ul>
+		<div>
+		<a href="" class="link"> ITUNES PODCASTS,  &nbsp</a>
+		<a href="" class="link"> SOUNDCLOUD,  &nbsp</a>
+		<a href="" class="link"> ANCHOR</a>
+	</div>
+	</span>
+
+	<div class="menu"> 
+	  <div><a href="#faq" style="color: white;">FAQ</a></div>
+	  <div style="text-align: center;"><a href="#top" style="color: white;">В НАЧАЛО</a></div>
+	  <div style="text-align: right;"><a href="#contacts" style="color: white;">КОНТАКТЫ</a></div>
+	</div>
+</div>
+
+<div class="menu"> 
+  <div><a href="#about">О КОМАНДЕ</a></div>
+  <div style="text-align: center;"><a href="#guest">ПРЕДЛОЖИТЬ ГОСТЯ</a></div>
+  <div style="text-align: right;"><a href="#support">ПОДДЕРЖКА</a></div>
+</div>
+<a name="guest"></a> <div class="guest">
+	<p class="title" >ПРЕДЛОЖИТЬ ГОСТЯ</p>	
+	<p>Хочешь стать частью подкаста? Предложи нового гостя для рубрики "интервью". Для этого тебе нужно просто заполнить короткую форму и отправить её нам. Мы регулярно рассматриваем предложения и выбираем самые интересные варианты</p>
+	<p>Мы очень серьёзно относимся к выбору людей для этой рубрики. Популярность и количество подписчиков не имеют для нас никакого значения. Важно то, чем занимается этот человек.</p>
+
+	<h1 style="font-family: GothamPro;">Заполните форму</h1>
+	<form action="{{url_for('guest')}}" method="post">
+			<div style="width: 100%;">
+			<input type="text" name="name" placeholder="Твоё имя" required>
+			<input type="email" name="email" placeholder="Твоя эелектронная почта" required>
+			<input type="text" name="link" placeholder="Линк на гостя" required>
+			</div>
+			<textarea name="description" placeholder="Почему стоит взять интервью у этого человека?" required rows="18" cols="75"></textarea>
+			<button id="success">Отправить</button>
+	</form>
+	<div class="menu"> 
+	  <div><a href="#faq">FAQ</a></div>
+	  <div style="text-align: center;"><a href="#top">В НАЧАЛО</a></div>
+	  <div style="text-align: right;"><a href="#contacts">КОНТАКТЫ</a></div>
+	</div>
+</div>
+
+<div class="menu"> 
+  <div><a href="#about">О КОМАНДЕ</a></div>
+  <div style="text-align: center;"><a href="#guest">ПРЕДЛОЖИТЬ ГОСТЯ</a></div>
+  <div style="text-align: right;"><a href="#support">ПОДДЕРЖКА</a></div>
+</div>
+<a name="support"></a><div class="listen">
+	<div>
+		<span>ПОДДЕРЖАТЬ ПОДКАСТ
+			<div class="description">
+				<p style="text-align: initial; font-size: 30px;">
+				<b>Крути Педали &#8211</b> молодой проект, поэтому нам нужна твоя поддержка. Есть несколько способо: поддержать нас на Potreon, обменяться баннерами или заказать у нас рекламы. Переходи по ссылкам и пиши на почту:
+				</p>
+				<p style="text-align: initial; font-size: 30px; font-weight: bold;">krutipedalipodcast@gmail.com</p>
+			</div>
+		</span>
+		<p>
+		<a href=""> PATREON,  &nbsp</a>
+		<a href=""> БАННЕР НА САЙТЕ,  &nbsp</a>
+		<a href=""> РЕКЛАМА В ПОДКАСТЕ</a>
+		</p>
+	</div>
+</div>
+	
+<div class="menu"> 
+  <div><a href="#faq">FAQ</a></div>
+  <div style="text-align: center;"><a href="#top">В НАЧАЛО</a></div>
+  <div style="text-align: right;"><a href="#contacts">КОНТАКТЫ</a></div>
+</div>
+
+<div class="menu"> 
+  <div><a href="#about">О КОМАНДЕ</a></div>
+  <div style="text-align: center;"><a href="#guest">ПРЕДЛОЖИТЬ ГОСТЯ</a></div>
+  <div style="text-align: right;"><a href="#support">ПОДДЕРЖКА</a></div>
+</div>
+<div style="text-align: center; width: 100%;" class="title">БАННЕРЫ</div>
+<div class="banner">
+	<div class="banner1">Здесь может быть ваша реклама</div>
+	<div class="banner2">Здесь может быть ваша реклама</div>
+	<div class="banner3">Здесь может быть ваша реклама</div>
+</div>
+<div class="menu"> 
+  <div><a href="#faq">FAQ</a></div>
+  <div style="text-align: center;"><a href="#top">В НАЧАЛО</a></div>
+  <div style="text-align: right;"><a href="#contacts">КОНТАКТЫ</a></div>
+</div>
+<div class="menu"> 
+  <div><a href="#about">О КОМАНДЕ</a></div>
+  <div style="text-align: center;"><a href="#guest">ПРЕДЛОЖИТЬ ГОСТЯ</a></div>
+  <div style="text-align: right;"><a href="#support">ПОДДЕРЖКА</a></div>
+</div>
+<a name="faq"></a><div class="faq">
+	<p class="title">FAQ</p>
+	<div class="leftFaq">
+		<p><b>&#8212 Что такое подкасты?</b></p> 
+<p>Подкаст — это аудиозапись, которую можно скачать на ПК или смартфон. Подкасты можно слушать, где угодно: дома, в машине, в метро; и когда угодно: пока занимаешься  бытовыми делами, тренируешься или гуляешь по парку.</p> 
+
+<p><b>&#8212Какие рубрики делает подкаст Крути Педали?</b></p>  
+<p>Сейчас у нас есть три рубрики: интервью, фавориты и разговорный.</p>
+
+<p><b>&#8212 Где слушать подкаст Крути Педали?</b></p> 
+<p>Если у тебя iOS — в стандартом приложении <a href="" style="text-decoration: underline; color: blue">Podcasts</a> (оно уже есть на твоем телефоне). Если у тебя Android — в одноименном Podcasts <a href="" style="text-decoration: underline; color: blue">CastBox</a>. Универсальные приложения, которые работают для всех — это <a href="" style="text-decoration: underline; color: blue">Soundcloud</a> и <a href="" style="text-decoration: underline; color: blue">Anchor</a>.</p>
+
+<p><b>&#8212 Как оставить отзыв в приложении iTunes Подкасты?</b></p> 
+<p>Зайди в приложение iTunes Подкасты, вбей в поиск “Крути Педали” и открой страницу подкаста. Пролистай страницу вниз до раздела “Оценки и отзывы” и нажми на “написать отзыв”.</p>
+	</div>
+	<div class="rightFaq">
+		<p><b>&#8212 Как оставить отзыв, если у меня Android?</b></p>
+		<p>Комментируй наши выпуски на <a href="" style="text-decoration: underline; color: blue">Soundcloud</a> и делись впечатлениями в социальных сетях. </p>
+		<p><b>&#8212 Как поддерживать подкаст?</b></p>
+		<p>Ты можешь предложить гостя для рубрики “интервью”, отправить нам свой фаворит, поделиться подкастом в социальных сетях или оставить отзыв в iTunes.</p>
+		<p><b>&#8212 Я хочу поделиться с вами своим фаворитом. Как это сделать? </b></p>
+		<p>Запиши короткую аудиозапись (не больше двух минут) с помощью диктофона на своем смартфоне. Во время записи назови свое имя и фаворит, а потом расскажи, что именно тебе в нем понравилось. Отправь аудио на нашу почту krutipedalipodcast@gmail.com. В письме укажи ссылку на свои социальные сети, чтобы мы могли могли упомянуть тебя в описании к эпизоду, при условии использования твоего фаворита.</p>
+		<p><b>&#8212 Хочу рекламу в подкасте Крути Педали. Это возможно?</b></p>
+		<p>Конечно! Пиши на почту krutipedalipodcast@gmail.com.</p>
+
+
+	</div>
+</div>
+<div class="menu"> 
+  <div><a href="#faq">FAQ</a></div>
+  <div style="text-align: center;"><a href="#top">В НАЧАЛО</a></div>
+  <div style="text-align: right;"><a href="#contacts">КОНТАКТЫ</a></div>
+</div>
+
+<div class="menu"> 
+  <div><a href="#about">О КОМАНДЕ</a></div>
+  <div style="text-align: center;"><a href="#guest">ПРЕДЛОЖИТЬ ГОСТЯ</a></div>
+  <div style="text-align: right;"><a href="#support">ПОДДЕРЖКА</a></div>
+</div>
+
+<a name="about"></a><div class="about">
+	<span class="title">О КОМАНДЕ</span>
+	<div class="imageContainer">
+	<center>	
+	<div class="image rightImage" >	
+		<img style="width: 100%;" src="../static/images/KP-nastia-tih.png" alt="">
+		<p class="imageText"><span>СОЗ <br> ДА <br>ТЕЛЬ</span></p>
+			<div class="name"> 
+  				<div style="vertical-align: initial;"><b>Анастасия Тихнович</b></div>
+			</div>
+	</div>
+	<div class="image">	
+		<img style="width: 100%" src="../static/images/KP-masha.png" alt="">
+		<p class="imageText"><span>ДЕ <br> ЗИГ <br>НЕР</span></p>
+		<div class="name"> 
+		  	<div style="vertical-align: initial;"><b>Мария Щербак</b></div>
+		</div>
+	</div>
+	<div class="image leftImage" >	
+		<img style="width: 100%;" src="../static/images/KP-nastia-moz.png" alt="">
+		<p class="imageText"><span>ПАР <br> Т <br>НЕР</span></p>
+		<div class="name"> 
+  			<div style="vertical-align: initial;"><b>Анастасия Мозговая</b></div>
+		</div>
+	</div>
+	</center>
+	</div>
+</div>
+<div class="menu" > 
+  <div><a href="#faq">FAQ</a></div>
+  <div style="text-align: center;"><a href="#top">В НАЧАЛО</a></div>
+  <div style="text-align: right;"><a href="#contacts">КОНТАКТЫ</a></div>
+</div>
+<div class="menu"> 
+  <div><a href="#about">О КОМАНДЕ</a></div>
+  <div style="text-align: center;"><a href="#guest">ПРЕДЛОЖИТЬ ГОСТЯ</a></div>
+  <div style="text-align: right;"><a href="#support">ПОДДЕРЖКА</a></div>
+</div>
+<a name="contacts"></a> <div class="listen">
+	<div>
+		<span>КОНТАКТЫ:</span>
+		<a href=""> ITUNES PODCASTS,  &nbsp</a>
+		<a href=""> SOUNDCLOUD,  &nbsp</a>
+		<a href=""> ANCHOR,&nbsp</a>
+		<a href=""> INSTAGRAM</a>
+		<p><b>krutipedalipodcast@gmail.com</b></p>
+	</div>
+</div>
+<div class="menu" > 
+  <div><a href="#faq">FAQ</a></div>
+  <div style="text-align: center;"><a href="#top">В НАЧАЛО</a></div>
+  <div style="text-align: right;"><a href="#contacts">КОНТАКТЫ</a></div>
+</div>
+
+
+</body>
+</html>

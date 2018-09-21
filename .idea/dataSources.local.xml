@@ -2,28 +2,28 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="notes" uuid="84d87510-6ad1-4bf4-85d1-02a9f8ad1e35">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="SQLITE" exact-version="0.0" />
     </data-source>
     <data-source name="notes [2]" uuid="59f283b1-9f41-40b7-9054-15be4f88a561">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="SQLITE" exact-version="0.0" />
     </data-source>
     <data-source name="tutorial" uuid="0780509a-d640-4ebc-9012-0fa91060aa07">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="SQLITE" exact-version="0.0" />
     </data-source>
     <data-source name="users" uuid="c9d85019-3f11-476f-9615-c072abb10ca2">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="SQLITE" exact-version="0.0" />
     </data-source>
     <data-source name="users [2]" uuid="fb45c337-f2b2-4f96-b46d-04902927cc27">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="SQLITE" exact-version="0.0" />
     </data-source>
     <data-source name="users [3]" uuid="2fff7031-7cb0-405b-8989-9673b44decde">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="SQLITE" exact-version="0.0" />
     </data-source>
     <data-source name="payments" uuid="cede2806-5bbb-4181-91f4-121c3b3295db">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="SQLITE" exact-version="0.0" />
     </data-source>
     <data-source name="payments [2]" uuid="fa6f1886-face-40cc-85e8-58ca0106a4fc">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="SQLITE" exact-version="0.0" />
     </data-source>
   </component>
 </project>
