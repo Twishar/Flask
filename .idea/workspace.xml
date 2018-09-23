@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="177f8fb8-986a-474e-8c40-8a5d2c84431b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/LandingWithMail/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LandingWithMail/static/images/KP-masha.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LandingWithMail/static/images/KP-nastia-moz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LandingWithMail/static/images/KP-nastia-tih.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LandingWithMail/static/images/ep.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LandingWithMail/static/images/epizode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LandingWithMail/static/stylesheets/mobileStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LandingWithMail/static/stylesheets/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LandingWithMail/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LandingWithMail/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/LandingWithMail/app.py" afterDir="false" />
+    </list>
+    <list id="c2d24b21-d86d-4097-9a28-44c01330c0b1" name="Landing with Mail" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +26,7 @@
     <SUITE FILE_PATH="coverage/Flask$server.coverage" NAME="server Coverage Results" MODIFIED="1531669501924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tutorials/http_methods_example" />
     <SUITE FILE_PATH="coverage/Flask$sort.coverage" NAME="sort Coverage Results" MODIFIED="1536232968856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/InteractionsWithAPI" />
     <SUITE FILE_PATH="coverage/Flask$json_example.coverage" NAME="json_example Coverage Results" MODIFIED="1527164394550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Charts" />
-    <SUITE FILE_PATH="coverage/Flask$app__2_.coverage" NAME="app (2) Coverage Results" MODIFIED="1537520233270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LandingWithMail" />
+    <SUITE FILE_PATH="coverage/Flask$app__2_.coverage" NAME="app (2) Coverage Results" MODIFIED="1537701382015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LandingWithMail" />
     <SUITE FILE_PATH="coverage/Flask$url_building.coverage" NAME="url_building Coverage Results" MODIFIED="1531669049436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tutorials" />
     <SUITE FILE_PATH="coverage/Flask$registration.coverage" NAME="registration Coverage Results" MODIFIED="1527163798903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WebForms" />
     <SUITE FILE_PATH="coverage/Flask$result.coverage" NAME="result Coverage Results" MODIFIED="1531670363489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tutorials/FlaskTemplates" />
@@ -65,8 +56,9 @@
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -89,14 +81,14 @@
         <counts>
           <entry key="css" value="8" />
           <entry key="html" value="1134" />
-          <entry key="py" value="1999" />
+          <entry key="py" value="2792" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="8" />
           <entry key="HTML" value="1134" />
-          <entry key="Python" value="1999" />
+          <entry key="Python" value="2792" />
         </counts>
       </usages-collector>
     </session>
@@ -106,12 +98,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LandingWithMail/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+            <state relative-caret-position="184">
+              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding>
-                <marker date="1537520177755" expanded="true" signature="105:106" ph="..." />
-                <marker date="1537520177755" expanded="true" signature="105:111" ph="..." />
-                <marker date="1537520177755" expanded="true" signature="208:264" ph="..." />
+                <element signature="e#1#69#0" expanded="true" />
+                <marker date="1537701339283" expanded="true" signature="423:424" ph="..." />
+                <marker date="1537701339283" expanded="true" signature="423:429" ph="..." />
+                <marker date="1537701339283" expanded="true" signature="527:1150" ph="..." />
+                <marker date="1537701339283" expanded="true" signature="1148:1150" ph="..." />
               </folding>
             </state>
           </provider>
@@ -121,10 +115,7 @@
         <entry file="file://$PROJECT_DIR$/LandingWithMail/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="186">
-              <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
-              <folding>
-                <element signature="n#style#0;n#div#2;n#div#23;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+              <caret line="110" column="39" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -228,7 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,32 +235,13 @@
               <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
               <item name="Flask" type="462c0819:PsiDirectoryNode" />
               <item name="LandingWithMail" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flask" type="462c0819:PsiDirectoryNode" />
-              <item name="LandingWithMail" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flask" type="462c0819:PsiDirectoryNode" />
-              <item name="LandingWithMail" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flask" type="462c0819:PsiDirectoryNode" />
-              <item name="LandingWithMail" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -443,6 +414,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="177f8fb8-986a-474e-8c40-8a5d2c84431b" name="Default" comment="" />
+      <changelist id="c2d24b21-d86d-4097-9a28-44c01330c0b1" name="Landing with Mail" comment="" />
       <created>1527152044489</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -454,8 +426,8 @@
     <frame x="762" y="0" width="781" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28294036" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979339" visible="true" weight="0.21914008" />
+      <window_info id="Structure" order="1" sideWeight="0.50206614" side_tool="true" weight="0.29126215" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32855093" />
@@ -466,7 +438,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32998565" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32424676" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32855093" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -479,6 +451,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -740,21 +738,20 @@
     <entry file="file://$PROJECT_DIR$/LandingWithMail/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
-          <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#23;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="110" column="39" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LandingWithMail/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        <state relative-caret-position="184">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding>
-            <marker date="1537520177755" expanded="true" signature="105:106" ph="..." />
-            <marker date="1537520177755" expanded="true" signature="105:111" ph="..." />
-            <marker date="1537520177755" expanded="true" signature="208:264" ph="..." />
+            <element signature="e#1#69#0" expanded="true" />
+            <marker date="1537701339283" expanded="true" signature="423:424" ph="..." />
+            <marker date="1537701339283" expanded="true" signature="423:429" ph="..." />
+            <marker date="1537701339283" expanded="true" signature="527:1150" ph="..." />
+            <marker date="1537701339283" expanded="true" signature="1148:1150" ph="..." />
           </folding>
         </state>
       </provider>
