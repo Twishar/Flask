@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kruti-pedali</title>
-	<link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
-	<link rel="stylesheet" href="{{url_for('static', filename='stylesheets/style.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/mobileStyle.css')}}">
+	<link href="https://yarnpkg.com/en/package/normalize.css">
+	<link rel="stylesheet" href="../static/style/style.css">
+	<link rel="stylesheet" href="../static/style/mobileStyle.css">
 </head>
 <body>
 <a name="top"></a><div class="menu"> 
@@ -14,8 +14,8 @@
   <div style="text-align: right;"><a href="#support">ПОДДЕРЖКА</a></div>
 </div>
 
-<video width="500" height="400" autoplay loop>
-    <source src="Lyricsvideo.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+<video width="100%" height="50%" autoplay  muted loop="loop">
+    <source src="../static/video/text mic2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
     Тег video не поддерживается вашим браузером. 
   </video>
 <div class="menu"> 
@@ -31,8 +31,8 @@
 	<div style="vertical-align: middle;">
 
 		<span>СЛУШАЙ В:</span>
-		<a href=""> ITUNES PODCASTS,  &nbsp</a>
-		<a href=""> SOUNDCLOUD,  &nbsp</a>
+		<a href=""> ITUNES PODCASTS,</a>&nbsp
+		<a href=""> SOUNDCLOUD,</a>&nbsp
 		<a href=""> ANCHOR</a>
 
 	</div>
@@ -52,7 +52,7 @@
 		<p class="title">ПОСЛЕДНИЙ ЭПИЗОД</p>	
 		<div class="episodeImage">
 			<div>
-				<img style="width: 71%" src="../static/images/ep.png">
+				<img style="width: 71%" src="../static/image/epizode.png">
 				<button><a href="" style="font-family: GothamPro">Другие эпизоды</a></button>
 			</div>			
 		</div>
@@ -108,7 +108,7 @@
 			<input type="email" name="email" placeholder="Твоя эелектронная почта" required>
 			<input type="text" name="link" placeholder="Линк на гостя" required>
 			</div>
-			<textarea name="description" placeholder="Почему стоит взять интервью у этого человека?" required rows="18" cols="75"></textarea>
+			<textarea placeholder="Почему стоит взять интервью у этого человека?" required rows="18" cols="75"></textarea>
 			<button id="success">Отправить</button>
 	</form>
 	<div class="menu"> 
@@ -153,6 +153,7 @@
   <div style="text-align: right;"><a href="#support">ПОДДЕРЖКА</a></div>
 </div>
 <div style="text-align: center; width: 100%;" class="title">БАННЕРЫ</div>
+<p class="bannerText">Команда “Крути Педали” с радостью поддерживает молодые, амбициозные проекты. Поэтому если между нами возник тот самый “дзинь”, делай баннер и присылай его на почту krutipedalipodcast@gmail.com. Технические требования описали здесь.</p>
 <div class="banner">
 	<div class="banner1">Здесь может быть ваша реклама</div>
 	<div class="banner2">Здесь может быть ваша реклама</div>
@@ -213,21 +214,21 @@
 	<div class="imageContainer">
 	<center>	
 	<div class="image rightImage" >	
-		<img style="width: 100%;" src="../static/images/KP-nastia-tih.png" alt="">
+		<img style="width: 100%;" src="../static/image/KP-nastia-tih.png" alt="">
 		<p class="imageText"><span>СОЗ <br> ДА <br>ТЕЛЬ</span></p>
 			<div class="name"> 
   				<div style="vertical-align: initial;"><b>Анастасия Тихнович</b></div>
 			</div>
 	</div>
 	<div class="image">	
-		<img style="width: 100%" src="../static/images/KP-masha.png" alt="">
+		<img style="width: 100%" src="../static/image/KP-masha.png" alt="">
 		<p class="imageText"><span>ДЕ <br> ЗИГ <br>НЕР</span></p>
 		<div class="name"> 
 		  	<div style="vertical-align: initial;"><b>Мария Щербак</b></div>
 		</div>
 	</div>
 	<div class="image leftImage" >	
-		<img style="width: 100%;" src="../static/images/KP-nastia-moz.png" alt="">
+		<img style="width: 100%;" src="../static/image/KP-nastia-moz.png" alt="">
 		<p class="imageText"><span>ПАР <br> Т <br>НЕР</span></p>
 		<div class="name"> 
   			<div style="vertical-align: initial;"><b>Анастасия Мозговая</b></div>
@@ -249,9 +250,9 @@
 <a name="contacts"></a> <div class="listen">
 	<div>
 		<span>КОНТАКТЫ:</span>
-		<a href=""> ITUNES PODCASTS,  &nbsp</a>
-		<a href=""> SOUNDCLOUD,  &nbsp</a>
-		<a href=""> ANCHOR,&nbsp</a>
+		<a href=""> ITUNES PODCASTS,</a>&nbsp
+		<a href=""> SOUNDCLOUD,</a>&nbsp
+		<a href=""> ANCHOR,</a>&nbsp
 		<a href=""> INSTAGRAM</a>
 		<p><b>krutipedalipodcast@gmail.com</b></p>
 	</div>
@@ -261,6 +262,11 @@
   <div style="text-align: center;"><a href="#top">В НАЧАЛО</a></div>
   <div style="text-align: right;"><a href="#contacts">КОНТАКТЫ</a></div>
 </div>
+
+
+
+
+
 
 
 </body>

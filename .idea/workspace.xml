@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="177f8fb8-986a-474e-8c40-8a5d2c84431b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/LandingWithMail/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/LandingWithMail/app.py" afterDir="false" />
-    </list>
-    <list id="c2d24b21-d86d-4097-9a28-44c01330c0b1" name="Landing with Mail" comment="">
+      <change afterPath="$PROJECT_DIR$/LandingWithMail/static/image/KP-masha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LandingWithMail/static/image/KP-nastia-moz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LandingWithMail/static/image/KP-nastia-tih.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LandingWithMail/static/image/epizode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LandingWithMail/static/style/mobileStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LandingWithMail/static/style/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LandingWithMail/static/video/text mic2.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LandingWithMail/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/LandingWithMail/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LandingWithMail/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/LandingWithMail/templates/index.html" afterDir="false" />
     </list>
+    <list id="c2d24b21-d86d-4097-9a28-44c01330c0b1" name="Landing with Mail" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +34,7 @@
     <SUITE FILE_PATH="coverage/Flask$server.coverage" NAME="server Coverage Results" MODIFIED="1531669501924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tutorials/http_methods_example" />
     <SUITE FILE_PATH="coverage/Flask$sort.coverage" NAME="sort Coverage Results" MODIFIED="1536232968856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/InteractionsWithAPI" />
     <SUITE FILE_PATH="coverage/Flask$json_example.coverage" NAME="json_example Coverage Results" MODIFIED="1527164394550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Charts" />
-    <SUITE FILE_PATH="coverage/Flask$app__2_.coverage" NAME="app (2) Coverage Results" MODIFIED="1537701382015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LandingWithMail" />
+    <SUITE FILE_PATH="coverage/Flask$app__2_.coverage" NAME="app (2) Coverage Results" MODIFIED="1537724518079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LandingWithMail" />
     <SUITE FILE_PATH="coverage/Flask$url_building.coverage" NAME="url_building Coverage Results" MODIFIED="1531669049436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tutorials" />
     <SUITE FILE_PATH="coverage/Flask$registration.coverage" NAME="registration Coverage Results" MODIFIED="1527163798903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WebForms" />
     <SUITE FILE_PATH="coverage/Flask$result.coverage" NAME="result Coverage Results" MODIFIED="1531670363489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tutorials/FlaskTemplates" />
@@ -52,70 +60,66 @@
     <session id="324779334">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="4" />
-          <entry key="html" value="7" />
+          <entry key="html" value="11" />
           <entry key="png" value="5" />
-          <entry key="py" value="9" />
+          <entry key="py" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="4" />
-          <entry key="HTML" value="7" />
+          <entry key="HTML" value="11" />
           <entry key="Image" value="5" />
-          <entry key="Python" value="9" />
+          <entry key="Python" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="8" />
-          <entry key="html" value="1134" />
-          <entry key="py" value="2792" />
+          <entry key="html" value="1164" />
+          <entry key="py" value="2929" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="8" />
-          <entry key="HTML" value="1134" />
-          <entry key="Python" value="2792" />
+          <entry key="HTML" value="1164" />
+          <entry key="Python" value="2929" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LandingWithMail/app.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LandingWithMail/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-              <folding>
-                <element signature="e#1#69#0" expanded="true" />
-                <marker date="1537701339283" expanded="true" signature="423:424" ph="..." />
-                <marker date="1537701339283" expanded="true" signature="423:429" ph="..." />
-                <marker date="1537701339283" expanded="true" signature="527:1150" ph="..." />
-                <marker date="1537701339283" expanded="true" signature="1148:1150" ph="..." />
-              </folding>
+            <state relative-caret-position="4522">
+              <caret line="266" selection-start-line="266" selection-end-line="266" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LandingWithMail/templates/index.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LandingWithMail/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="110" column="39" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="39" />
+            <state relative-caret-position="280">
+              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -149,7 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tutorials/SendingFormDataToTemplate/templates/student.html" />
         <option value="$PROJECT_DIR$/tutorials/Cookies/templates/index.html" />
         <option value="$PROJECT_DIR$/tutorials/Cookies/app.py" />
         <option value="$PROJECT_DIR$/tutorials/Sessions/app.py" />
@@ -198,6 +201,7 @@
         <option value="$PROJECT_DIR$/InteractionsWithAPI/templates/api_for_rub.html" />
         <option value="$PROJECT_DIR$/LandingWithMail/static/stylesheets/mobileStyle.css" />
         <option value="$PROJECT_DIR$/LandingWithMail/static/stylesheets/style.css" />
+        <option value="$USER_HOME$/Downloads/Telegram Desktop/index.html" />
         <option value="$PROJECT_DIR$/LandingWithMail/templates/index.html" />
         <option value="$PROJECT_DIR$/LandingWithMail/app.py" />
       </list>
@@ -210,9 +214,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="950" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -254,11 +258,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GIT\Flask\LandingWithMail" />
       <recent name="D:\GIT\Flask\LandingWithMail\templates" />
       <recent name="D:\GIT\Flask\InteractionsWithAPI\templates" />
       <recent name="D:\GIT\Flask\InteractionsWithAPI" />
       <recent name="D:\GIT\Flask\LoginAddRemoveUser" />
-      <recent name="$PROJECT_DIR$/WebForms/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GIT\Flask\LandingWithMail\static\images" />
@@ -423,15 +427,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="781" height="830" extended-state="0" />
-    <editor active="true" />
+    <frame x="760" y="0" width="784" height="832" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979339" visible="true" weight="0.21914008" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979339" visible="true" weight="0.23895028" />
       <window_info id="Structure" order="1" sideWeight="0.50206614" side_tool="true" weight="0.29126215" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32855093" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3055954" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30472103" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39885223" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -439,7 +442,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32998565" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32424676" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32331902" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32855093" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -482,7 +485,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LoginAddRemoveUser/static/style.css" />
     <entry file="file://$PROJECT_DIR$/LoginWithFlask/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -735,24 +737,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index.html" />
     <entry file="file://$PROJECT_DIR$/LandingWithMail/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="110" column="39" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="39" />
+        <state relative-caret-position="4522">
+          <caret line="266" selection-start-line="266" selection-end-line="266" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LandingWithMail/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="e#1#69#0" expanded="true" />
-            <marker date="1537701339283" expanded="true" signature="423:424" ph="..." />
-            <marker date="1537701339283" expanded="true" signature="423:429" ph="..." />
-            <marker date="1537701339283" expanded="true" signature="527:1150" ph="..." />
-            <marker date="1537701339283" expanded="true" signature="1148:1150" ph="..." />
-          </folding>
+        <state relative-caret-position="280">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>

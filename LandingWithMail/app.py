@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 app.config['MAIL_SERVER'] = 'smtp.googlemail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'Your_mail@gmail.com'
-app.config['MAIL_PASSWORD'] = 'Your_mail_password'
+app.config['MAIL_USERNAME'] = 'example@gmail.com'
+app.config['MAIL_PASSWORD'] = 'pass'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
@@ -28,8 +28,8 @@ def guest():
     email = request.form.get('email')
     link = request.form.get('link')
     description = request.form.get('description')
-    msg = Message('Info from Guest form', sender='Your_mail@gmail.com',
-                  recipients=['recipients@gmail.com'])
+    msg = Message('Info from Guest form', sender='example@gmail.com',
+                  recipients=['cctncct@gmail.com'])
     msg.body = "User name: {}\n" \
                "User email: {}\n" \
                "Guest link: {}\n" \
