@@ -1,6 +1,6 @@
 from typing import Dict, List, Union
 
-from db import db
+from section1.db import db
 
 ItemJSON = Dict[str, Union[int, str, float]]
 

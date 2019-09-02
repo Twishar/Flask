@@ -1,5 +1,5 @@
 from flask_restful import Resource
-from models.store import StoreModel
+from section1.models.store import StoreModel
 
 STORE_DELETED = "Store deleted."
 STORE_NOT_FOUND = "Store not found."

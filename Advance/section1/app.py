@@ -1,12 +1,12 @@
-from flask import Flask, jsonify
+from flask import Flask
 from flask_restful import Api
 from flask_jwt_extended import JWTManager
 
-from db import db
-from blacklist import BLACKLIST
-from resources.user import UserRegister, UserLogin, User, TokenRefresh, UserLogout
-from resources.item import Item, ItemList
-from resources.store import Store, StoreList
+from section1.db import db
+from section1.blacklist import BLACKLIST
+from section1.resources import UserRegister, UserLogin, User, TokenRefresh, UserLogout
+from section1.resources import Item, ItemList
+from section1.resources import Store, StoreList
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data.db"

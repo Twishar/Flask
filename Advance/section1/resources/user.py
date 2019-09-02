@@ -8,8 +8,8 @@ from flask_jwt_extended import (
     jwt_required,
     get_raw_jwt,
 )
-from models.user import UserModel
-from blacklist import BLACKLIST
+from section1.models.user import UserModel
+from section1.blacklist import BLACKLIST
 
 
 USER_DELETED = "User deleted."

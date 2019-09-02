@@ -1,4 +1,4 @@
-from db import db
+from section1.db import db
 from .item import ItemJSON
 from typing import Dict, List, Union
 

@@ -1,6 +1,6 @@
 from flask_restful import Resource, reqparse
 from flask_jwt_extended import jwt_required, fresh_jwt_required
-from models.item import ItemModel
+from section1.models.item import ItemModel
 
 ITEM_DELETED = "Item deleted."
 ITEM_NOT_FOUND = "Item not found."
