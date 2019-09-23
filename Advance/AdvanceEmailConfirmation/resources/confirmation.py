@@ -1,12 +1,21 @@
-from flask import make_response, render_template
+import traceback
+from time import time
 from flask_restful import Resource
+from flask import make_response, render_template
 
-from models.confirmation import ConfirmationModel
+from libs.mailgun import MailGunException
 from models.user import UserModel
+from resources.user import USER_NOT_FOUND
+from models.confirmation import ConfirmationModel
+from schemas.confirmation import ConfirmationSchema
+
+confirmation_schema = ConfirmationSchema()
 
 EXPIRED = "The link has expired."
 NOT_FOUND = "Confirmation reference not found."
 ALREADY_CONFIRMED = "Registration has already been confirmed."
+RESEND_FAIL = "Internal server error. Failed to resend confirmation email."
+RESEND_SUCCESSFUL = "E-mail confirmation successfully re-sent."
 
 
 class Confirmation(Resource):
@@ -42,9 +51,40 @@ class ConfirmationByUser(Resource):
     @classmethod
     def get(cls, user_id: int):
         """Returns confirmations for a given user. Use for testing"""
-        pass
+        user = UserModel.find_by_id(user_id)
+        if not user:
+            return {"message": USER_NOT_FOUND}, 404
+
+        return (
+            {
+                "current_time": int(time()),
+                "confirmation": [
+                    confirmation_schema.dump(each)
+                    for each in user.confirmation.order_by(ConfirmationModel.expire_at)
+                ],
+            }, 200,
+        )
 
     @classmethod
-    def post(cls):
+    def post(cls, user_id: int):
         """Resend confirmation email"""
-        pass
+        user = UserModel.find_by_id(user_id)
+        if not user:
+            return {"message": USER_NOT_FOUND}, 404
+
+        try:
+            confirmation = user.most_recent_confirmation
+            if confirmation:
+                if confirmation.confirmed:
+                    return {"message": ALREADY_CONFIRMED}, 400
+                confirmation.force_to_expire()
+
+            new_confirmation = ConfirmationModel(user_id)
+            new_confirmation.save_to_db()
+            user.send_confirmation_email()
+            return {"message": RESEND_SUCCESSFUL}, 201
+        except MailGunException as e:
+            return {"message": str(e)}, 500
+        except :
+            traceback.print_exc()
+            return {"message": RESEND_FAIL}, 500
