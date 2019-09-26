@@ -25,5 +25,9 @@
     <data-source name="payments [2]" uuid="fa6f1886-face-40cc-85e8-58ca0106a4fc">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0.0" />
     </data-source>
+    <data-source name="data" uuid="3daf2ce5-a71d-40ed-91df-778dff788212">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
+      <auth-required>false</auth-required>
+    </data-source>
   </component>
 </project>

@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="177f8fb8-986a-474e-8c40-8a5d2c84431b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Advance/ImageUploads/schemas/image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Advance/models/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/Advance/models/item.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Advance/models/store.py" beforeDir="false" afterPath="$PROJECT_DIR$/Advance/models/store.py" afterDir="false" />
     </list>
     <list id="c2d24b21-d86d-4097-9a28-44c01330c0b1" name="Landing with Mail" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +32,7 @@
     <SUITE FILE_PATH="coverage/Flask$app__3_.coverage" NAME="app (3) Coverage Results" MODIFIED="1534321378053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LoginAddRemoveUser" />
     <SUITE FILE_PATH="coverage/Flask$create_db__1_.coverage" NAME="create_db (1) Coverage Results" MODIFIED="1536226452390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/InteractionsWithAPI" />
     <SUITE FILE_PATH="coverage/Flask$url_building.coverage" NAME="url_building Coverage Results" MODIFIED="1531669049436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tutorials" />
-    <SUITE FILE_PATH="coverage/Flask$app.coverage" NAME="app Coverage Results" MODIFIED="1567085153769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Advance" />
+    <SUITE FILE_PATH="coverage/Flask$app.coverage" NAME="app Coverage Results" MODIFIED="1567424971138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Advance" />
     <SUITE FILE_PATH="coverage/Flask$form_example.coverage" NAME="form_example Coverage Results" MODIFIED="1531756143335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tutorials/WTForms" />
     <SUITE FILE_PATH="coverage/Flask$hello.coverage" NAME="hello Coverage Results" MODIFIED="1531669814463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tutorials/FlaskTemplates" />
     <SUITE FILE_PATH="coverage/Flask$sort_currencies.coverage" NAME="sort_currencies Coverage Results" MODIFIED="1536233542125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/InteractionsWithAPI" />
@@ -45,123 +48,40 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="notes [2]" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="payments" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="payments [2]" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="tutorial" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="users" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="users [3]" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Advance/resources/store.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Advance/models/store.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Advance/models/user.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Advance/resources/user.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Advance/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Advance/db.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Advance/models/item.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Advance/models/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Advance/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Advance/resources/item.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -175,110 +95,16 @@
       <find>#top</find>
       <find>img</find>
       <find>form</find>
+      <find>USER_LOGGED_OUT</find>
+      <find>BLANK_ERROR</find>
+      <find>successfu</find>
+      <find>i</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/tutorials/WTForms/app.py" />
-        <option value="$PROJECT_DIR$/tutorials/WTForms/form_example.py" />
-        <option value="$PROJECT_DIR$/tutorials/WTForms/templates/contact.html" />
-        <option value="$PROJECT_DIR$/tutorials/WTForms/forms.py" />
-        <option value="$PROJECT_DIR$/LoginAddRemoveUser/script.py" />
-        <option value="$PROJECT_DIR$/Evo/create_db.py" />
-        <option value="$PROJECT_DIR$/LoginAddRemoveUser/templates/index.html" />
-        <option value="$PROJECT_DIR$/LoginAddRemoveUser/css/css.css" />
-        <option value="$PROJECT_DIR$/LoginAddRemoveUser/templates/test.html" />
-        <option value="$PROJECT_DIR$/LoginAddRemoveUser/templates/new.html" />
-        <option value="$PROJECT_DIR$/LoginAddRemoveUser/static/styles.css" />
-        <option value="$PROJECT_DIR$/LoginAddRemoveUser/static/js.js" />
-        <option value="$PROJECT_DIR$/LoginAddRemoveUser/templates/login.html" />
-        <option value="$PROJECT_DIR$/LoginAddRemoveUser/create_db.py" />
-        <option value="$PROJECT_DIR$/LoginAddRemoveUser/app.py" />
-        <option value="$PROJECT_DIR$/LoginAddRemoveUser/templates/users_info.html" />
-        <option value="$PROJECT_DIR$/FlaskMega/microblog/app/__init__.py" />
-        <option value="$PROJECT_DIR$/FlaskMega/microblog/templates/index.html" />
-        <option value="$PROJECT_DIR$/FlaskMega/microblog/forms.py" />
-        <option value="$PROJECT_DIR$/FlaskMega/microblog/templates/login.html" />
-        <option value="$PROJECT_DIR$/FlaskMega/microblog/templates/base.html" />
-        <option value="$PROJECT_DIR$/FlaskMega/microblog/templates/models.py" />
-        <option value="$PROJECT_DIR$/FlaskMega/microblog/models.py" />
-        <option value="$PROJECT_DIR$/FlaskMega/microblog/config.py" />
-        <option value="$PROJECT_DIR$/InteractionsWithAPI/templates/login.html" />
-        <option value="$PROJECT_DIR$/InteractionsWithAPI/forms.py" />
-        <option value="$PROJECT_DIR$/Evo/app.py" />
-        <option value="$PROJECT_DIR$/FlaskMega/microblog/app.py" />
-        <option value="$PROJECT_DIR$/InteractionsWithAPI/create_db.py" />
-        <option value="$PROJECT_DIR$/InteractionsWithAPI/sort.py" />
-        <option value="$PROJECT_DIR$/InteractionsWithAPI/templates/eur_test_templ.html" />
-        <option value="$PROJECT_DIR$/InteractionsWithAPI/templates/base.html" />
-        <option value="$PROJECT_DIR$/InteractionsWithAPI/templates/rub_templ.html" />
-        <option value="$PROJECT_DIR$/InteractionsWithAPI/config.py" />
-        <option value="$PROJECT_DIR$/InteractionsWithAPI/procfile" />
-        <option value="$PROJECT_DIR$/InteractionsWithAPI/templates/payments.html" />
-        <option value="$PROJECT_DIR$/InteractionsWithAPI/app.py" />
-        <option value="$PROJECT_DIR$/InteractionsWithAPI/templates/api_for_eur.html" />
-        <option value="$PROJECT_DIR$/InteractionsWithAPI/templates/api_for_rub.html" />
-        <option value="$PROJECT_DIR$/LandingWithMail/static/stylesheets/mobileStyle.css" />
-        <option value="$PROJECT_DIR$/LandingWithMail/static/stylesheets/style.css" />
-        <option value="$USER_HOME$/Downloads/Telegram Desktop/index.html" />
-        <option value="$PROJECT_DIR$/LandingWithMail/templates/index.html" />
-        <option value="$PROJECT_DIR$/LandingWithMail/app.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Advance/app.py" />
-        <option value="$PROJECT_DIR$/Advance/models/user.py" />
-        <option value="$PROJECT_DIR$/Advance/resources/item.py" />
-        <option value="$PROJECT_DIR$/Advance/resources/store.py" />
-        <option value="$PROJECT_DIR$/Advance/models/item.py" />
-        <option value="$PROJECT_DIR$/Advance/models/store.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="127" />
-    <option name="y" value="-4" />
-    <option name="width" value="1853" />
-    <option name="height" value="1076" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flask" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flask" type="462c0819:PsiDirectoryNode" />
-              <item name="Advance" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flask" type="462c0819:PsiDirectoryNode" />
-              <item name="Advance" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flask" type="462c0819:PsiDirectoryNode" />
-              <item name="Advance" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
+  <component name="ProjectId" id="1RNRNXbPDEENdT37G25bLPtph3d" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -289,18 +115,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Advance/ImageUploads" />
+      <recent name="$PROJECT_DIR$/Advance/section3" />
+      <recent name="$PROJECT_DIR$/Advance/section2" />
+      <recent name="$PROJECT_DIR$/Advance/section1" />
       <recent name="D:\GIT\Flask\LandingWithMail\static\images" />
-      <recent name="D:\GIT\Flask\LandingWithMail\static\stylesheets" />
-      <recent name="D:\GIT\Flask\LandingWithMail\static" />
-      <recent name="D:\GIT\Flask\FlaskMega\microblog" />
-      <recent name="$PROJECT_DIR$/ConnectToDB" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Advance/AdvanceEmailConfirmation" />
+      <recent name="$PROJECT_DIR$/Advance/section2/resources" />
+      <recent name="$PROJECT_DIR$/Advance/section2/models" />
       <recent name="$PROJECT_DIR$/Advance" />
       <recent name="D:\GIT\Flask\LandingWithMail" />
-      <recent name="D:\GIT\Flask\LandingWithMail\templates" />
-      <recent name="D:\GIT\Flask\InteractionsWithAPI\templates" />
-      <recent name="D:\GIT\Flask\InteractionsWithAPI" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -373,7 +199,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Advance/app.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Advance/section1/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -428,10 +254,10 @@
     </configuration>
     <list>
       <item itemvalue="Python.app (1)" />
-      <item itemvalue="Python.sort" />
-      <item itemvalue="Python.sort_currencies" />
       <item itemvalue="Python.app (2)" />
       <item itemvalue="Python.app" />
+      <item itemvalue="Python.sort" />
+      <item itemvalue="Python.sort_currencies" />
     </list>
     <recent_temporary>
       <list>
@@ -455,39 +281,27 @@
       <option name="presentableId" value="Default" />
       <updated>1527152044489</updated>
       <workItem from="1567069588370" duration="10702000" />
-      <workItem from="1567152084689" duration="980000" />
+      <workItem from="1567152084689" duration="6169000" />
+      <workItem from="1567177817452" duration="247000" />
+      <workItem from="1567412277190" duration="7012000" />
+      <workItem from="1567500595090" duration="14483000" />
+      <workItem from="1567583757960" duration="599000" />
+      <workItem from="1567585615700" duration="15000" />
+      <workItem from="1567598591808" duration="6521000" />
+      <workItem from="1567672349726" duration="4743000" />
+      <workItem from="1567758357951" duration="1204000" />
+      <workItem from="1569229526493" duration="610000" />
+      <workItem from="1569237552387" duration="6360000" />
+      <workItem from="1569328809519" duration="18000" />
+      <workItem from="1569329009300" duration="6636000" />
+      <workItem from="1569396525095" duration="657000" />
+      <workItem from="1569402975602" duration="3497000" />
+      <workItem from="1569483186795" duration="6145000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11682000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979339" visible="true" weight="0.2443339" />
-      <window_info id="Structure" order="1" sideWeight="0.50206614" side_tool="true" weight="0.29126215" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32855093" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30407524" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39885223" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5002764" side_tool="true" weight="0.24869384" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32998565" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4997236" visible="true" weight="0.3740857" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32855093" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32732317" />
-    </layout>
+    <option name="totallyTimeSpent" value="75618000" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -498,20 +312,7 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
@@ -531,314 +332,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/InteractionsWithAPI/templates/index.html" />
-    <entry file="file://$PROJECT_DIR$/FlaskMega/microblog/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InteractionsWithAPI/spam.log" />
-    <entry file="file://$PROJECT_DIR$/Evo/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InteractionsWithAPI/sort_currencies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InteractionsWithAPI/info.log" />
-    <entry file="file://$PROJECT_DIR$/InteractionsWithAPI/requirements.txt" />
-    <entry file="file://$PROJECT_DIR$/InteractionsWithAPI/procfile" />
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="2" selection-start-line="20" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InteractionsWithAPI/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InteractionsWithAPI/create_db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InteractionsWithAPI/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FlaskMega/microblog/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FlaskMega/microblog/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InteractionsWithAPI/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InteractionsWithAPI/templates/api_for_rub.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InteractionsWithAPI/templates/api_for_eur.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="114" selection-start-line="3" selection-start-column="114" selection-end-line="3" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Evo/templates/add_note.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InteractionsWithAPI/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LandingWithMail/static/images/KP-masha.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LandingWithMail/static/images/KP-nastia-moz.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LandingWithMail/static/images/KP-nastia-tih.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LandingWithMail/static/images/ep.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LandingWithMail/static/images/epizode.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Evo/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Evo/templates/all_notes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="18" selection-end-line="29" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InteractionsWithAPI/templates/payments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LandingWithMail/static/stylesheets/mobileStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="293" selection-start-line="293" selection-end-line="293" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LandingWithMail/static/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="282" lean-forward="true" selection-start-line="282" selection-end-line="282" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FlaskMega/microblog/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FlaskMega/microblog/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/index.html" />
-    <entry file="file://$PROJECT_DIR$/LandingWithMail/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3990">
-          <caret line="266" selection-start-line="266" selection-end-line="266" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LandingWithMail/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Advance/resources/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Advance/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Advance/blacklist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/flask_restful/reqparse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="306" column="8" selection-start-line="306" selection-start-column="8" selection-end-line="306" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/werkzeug/security.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/flask_jwt_extended/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Advance/resources/store.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Advance/models/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Advance/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Advance/db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Advance/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Advance/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Advance/resources/item.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Advance/resources/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Advance/models/item.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Advance/models/store.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
