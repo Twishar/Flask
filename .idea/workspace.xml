@@ -109,19 +109,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Advance/ImageUploads" />
-      <recent name="$PROJECT_DIR$/Advance/section3" />
-      <recent name="$PROJECT_DIR$/Advance/section2" />
-      <recent name="$PROJECT_DIR$/Advance/section1" />
-      <recent name="D:\GIT\Flask\LandingWithMail\static\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Advance/AdvanceEmailConfirmation" />
       <recent name="$PROJECT_DIR$/Advance/section2/resources" />
       <recent name="$PROJECT_DIR$/Advance/section2/models" />
       <recent name="$PROJECT_DIR$/Advance" />
       <recent name="D:\GIT\Flask\LandingWithMail" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Advance/DatabaseMigrations" />
+      <recent name="$PROJECT_DIR$/Advance/ImageUploads" />
+      <recent name="$PROJECT_DIR$/Advance/section3" />
+      <recent name="$PROJECT_DIR$/Advance/section2" />
+      <recent name="$PROJECT_DIR$/Advance/section1" />
     </key>
   </component>
   <component name="RunDashboard">
