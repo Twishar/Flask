@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="177f8fb8-986a-474e-8c40-8a5d2c84431b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Advance/ImageUploads/resources/image.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Advance/ImageUploads/strings/en-gb.json" beforeDir="false" afterPath="$PROJECT_DIR$/Advance/ImageUploads/strings/en-gb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advance/ImageUploads/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Advance/ImageUploads/app.py" afterDir="false" />
     </list>
     <list id="c2d24b21-d86d-4097-9a28-44c01330c0b1" name="Landing with Mail" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

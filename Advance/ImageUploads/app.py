@@ -1,8 +1,9 @@
-from flask import Flask, jsonify
-from flask_restful import Api
-from flask_jwt_extended import JWTManager
-from marshmallow import ValidationError
 import os
+from flask_restful import Api
+from flask import Flask, jsonify
+from marshmallow import ValidationError
+from flask_jwt_extended import JWTManager
+from flask_uploads import configure_uploads, patch_request_class
 
 from db import db
 from ma import ma
@@ -11,6 +12,8 @@ from resources.user import UserRegister, UserLogin, User, TokenRefresh, UserLogo
 from resources.item import Item, ItemList
 from resources.store import Store, StoreList
 from resources.confirmation import Confirmation, ConfirmationByUser
+from resources.image import ImageUpload
+from libs.image_helper import IMAGE_SET
 
 
 app = Flask(__name__)
@@ -25,6 +28,8 @@ app.config["JWT_BLACKLIST_TOKEN_CHECKS"] = [
 app.config["JWT_SECRET_KEY"] = os.environ.get("APP_SECRET_KEY")
 # we can also use app.secret_key like before, Flask-JWT-Extended can recognize both
 
+patch_request_class(app, 10 * 1024 * 1024)      # 10MB max size upload
+configure_uploads(app, IMAGE_SET)
 api = Api(app)
 
 
@@ -58,6 +63,8 @@ api.add_resource(TokenRefresh, "/refresh")
 api.add_resource(UserLogout, "/logout")
 api.add_resource(Confirmation, "/user_confirm/<string:confirmation_id>")
 api.add_resource(ConfirmationByUser, "/confirmation/user/<int:user_id>")
+api.add_resource(ImageUpload, "/upload/image")
+
 
 if __name__ == "__main__":
     db.init_app(app)
