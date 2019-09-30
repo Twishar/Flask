@@ -103,7 +103,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Advance/PaymentsWithStripe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -117,11 +117,11 @@
       <recent name="D:\GIT\Flask\LandingWithMail" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Advance/OAuth" />
       <recent name="$PROJECT_DIR$/Advance/DatabaseMigrations" />
       <recent name="$PROJECT_DIR$/Advance/ImageUploads" />
       <recent name="$PROJECT_DIR$/Advance/section3" />
       <recent name="$PROJECT_DIR$/Advance/section2" />
-      <recent name="$PROJECT_DIR$/Advance/section1" />
     </key>
   </component>
   <component name="RunDashboard">
