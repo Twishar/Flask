@@ -3,7 +3,7 @@ antiorm==1.2.1
 Babel==2.6.0
 billiard==3.5.0.4
 blinker==1.4
-celery==4.2.1
+celery==5.2.2
 click==6.7
 db==0.1.1
 Flask==1.0.2
